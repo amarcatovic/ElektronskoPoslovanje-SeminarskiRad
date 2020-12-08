@@ -6,7 +6,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 @Path("visa")
-public class banking {
+public class PlacanjeResurs {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
