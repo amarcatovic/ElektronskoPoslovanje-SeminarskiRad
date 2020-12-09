@@ -9,7 +9,7 @@ public class KreditnaKarticaRepozitorij extends Repozitorij<KreditnaKartica> {
 
     public KreditnaKartica dohvatiKreditnuKarticuSOdgovarajucimBrojem(String brojKartice){
         KreditnaKartica rezultat = null;
-        for(int i = 0; i < bazaPodataka.size(); ++i){
+        for(int i = 1; i <= bazaPodataka.size(); ++i){
             rezultat = bazaPodataka.get(i);
             if(rezultat.getBroj().equals(brojKartice))
                 break;

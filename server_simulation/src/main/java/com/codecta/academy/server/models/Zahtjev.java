@@ -1,20 +1,14 @@
 package com.codecta.academy.server.models;
 
-public class KreditnaKartica extends ModelObject{
+public class Zahtjev {
     private String broj;
     private String imeKorisnika;
     private Double stanje;
+    private Double kolicina;
+    private Integer prodavnicaId;
 
     public String getBroj() {
         return broj;
-    }
-
-    public KreditnaKartica(){}
-
-    public KreditnaKartica(String broj, String imeKorisnika, Double stanje) {
-        this.broj = broj;
-        this.imeKorisnika = imeKorisnika;
-        this.stanje = stanje;
     }
 
     public void setBroj(String broj) {
@@ -35,5 +29,21 @@ public class KreditnaKartica extends ModelObject{
 
     public void setStanje(Double stanje) {
         this.stanje = stanje;
+    }
+
+    public Double getKolicina() {
+        return kolicina;
+    }
+
+    public void setKolicina(Double kolicina) {
+        this.kolicina = kolicina;
+    }
+
+    public Integer getProdavnicaId() {
+        return prodavnicaId;
+    }
+
+    public void setProdavnicaId(Integer prodavnicaId) {
+        this.prodavnicaId = prodavnicaId;
     }
 }
