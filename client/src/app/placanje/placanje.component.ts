@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlacanjeComponent implements OnInit {
 
-  brojKartice: string = '';
+  brojKartice: string = '4556592096179748';
   jeLiPlaceno: boolean = false;
 
   constructor(private servisZaPlacanje: KorpaService) { }
