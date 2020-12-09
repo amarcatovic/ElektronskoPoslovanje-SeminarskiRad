@@ -52,7 +52,7 @@
           </a>
         </li>
         <li class="nav-item d-none d-lg-block ml-lg-4">
-          <a  target="_blank" class="btn btn-neutral btn-icon" style="display: flex; justify-content: center; align-items: center; flex-direction: row;">
+          <a [routerLink]="['/korpa']" routerLinkActive="router-link-active" class="btn btn-neutral btn-icon" style="display: flex; justify-content: center; align-items: center; flex-direction: row;">
             <span *ngIf="korpa.proizvodi.length > 0" style="border-radius: 45px; background-color: red; padding: 4px; margin-right: 10px; color: white; display: flex; align-items: center; justify-content: center; height: 20px; width: 20px;">
               {{ korpa.proizvodi.length }}
             </span>
