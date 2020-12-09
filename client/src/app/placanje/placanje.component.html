@@ -1,0 +1,72 @@
+<div class="container" style="height: 100vh; width: 100%; display: flex; justify-content: center; align-items: center;">
+<!-- Credit Card Payment Form - START -->
+
+<div class="container" *ngIf="!jeLiPlaceno">
+    <div class="row" style="display: flex; justify-content: center; align-items: center;">
+        <div class="" style="width: 80%">
+            <div class="panel panel-default" style="box-shadow: -1px 3px 85px 0px rgba(0,0,0,0.75); padding: 55px; width: 100%;">
+                <div class="panel-heading">
+                    <div class="row">
+                        <h3 class="text-center">Detalji plaćanja</h3>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <form role="form">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label>BROJ KARTICE</label>
+                                    <div class="input-group" style="width: 100%;">
+                                        <input type="tel" class="form-control" placeholder="Broj kartice" size="40" name="brojKartice" [(ngModel)]="brojKartice"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-7 col-md-7">
+                                <div class="form-group">
+                                    <label><span class="hidden-xs">DATUM ISTEKA</span><span class="visible-xs-inline"></span> </label>
+                                    <input type="tel" class="form-control" placeholder="MM / GG" size="10"/>
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-md-5 pull-right">
+                                <div class="form-group">
+                                    <label>CV KOD</label>
+                                    <input type="tel" class="form-control" placeholder="CVC" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label>VLASNIK KARTICE</label>
+                                    <input type="text" class="form-control" placeholder="Ime i Prezime" size="40" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <button class="btn btn-warning btn-lg btn-block" (click)="plati()">PLATI</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .cc-img {
+        margin: 0 auto;
+    }
+</style>
+<!-- Credit Card Payment Form - END -->
+
+<div class="container" *ngIf="jeLiPlaceno">
+  USPJELO JE
+</div>
+
+</div>

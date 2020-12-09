@@ -1,3 +1,5 @@
+import { PlacanjeComponent } from './placanje/placanje.component';
+import { KorpaComponent } from './korpa/korpa/korpa.component';
 import { NgModule } from '@angular/core';
 import { CommonModule, } from '@angular/common';
 import { BrowserModule  } from '@angular/platform-browser';
@@ -10,8 +12,10 @@ import { LandingComponent } from './landing/landing.component';
 import { LoginComponent } from './login/login.component';
 
 const routes: Routes =[
-    { path: 'shop',          component: LandingComponent },
-    { path: '', redirectTo: 'shop', pathMatch: 'full' }
+    { path: 'shop', component: LandingComponent },
+    { path: '', redirectTo: 'shop', pathMatch: 'full' },
+    { path: 'korpa', component: KorpaComponent },
+    { path: 'placanje', component: PlacanjeComponent },
 ];
 
 @NgModule({

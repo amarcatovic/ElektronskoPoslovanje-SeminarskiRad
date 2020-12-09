@@ -1,3 +1,4 @@
+import { KorpaComponent } from './korpa/korpa/korpa.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -16,23 +17,29 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HomeModule } from './home/home.module';
 import { LoginComponent } from './login/login.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { PlacanjeComponent } from './placanje/placanje.component';
+
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     SignupComponent,
     LandingComponent,
     ProfileComponent,
     NavbarComponent,
     FooterComponent,
-    LoginComponent
-  ],
+    LoginComponent,
+    KorpaComponent,
+    PlacanjeComponent,
+   ],
   imports: [
     BrowserModule,
     NgbModule,
     FormsModule,
     RouterModule,
     AppRoutingModule,
-    HomeModule
+    HomeModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
